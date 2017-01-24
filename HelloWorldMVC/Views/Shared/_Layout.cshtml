@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                @Html.ActionLink("Home Page", "Index", "Welcome")
+            </li>
+
+            <li>
+                @Html.ActionLink("About", "About", "Welcome" )
+            </li>
+
+            <li>
+                @Html.ActionLink("Information", "Index2", "Information")
+            </li>
+
+        </ul>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Rocio's Web Application</p>
+        </footer>
+ 
+</body>
+</html>
